@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teste</title>        
+        <meta charset="UTF-8">
+
+        <link rel="icon" href="../img/logo-title.jpg">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/teste.css">
+    </head>
+    <body>   
+        <nav class="navbar navbar-expand-lg navbar-ligth">
+            <a class="navbar-brand" href="../home.html">
+                <img src="../img/logo-covid.png" alt="logo-covid">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index/index.html">O que é o Coronavirus?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index/sintomas.html">Sintomas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index/prevencao.html">Prevenção</a>
+                    </li>                
+                </ul>
+            </div>
+            <div >                
+                 <a class="nav-link" href="../index/sobre.html">Sobre Nós</a>                
+            </div>
+        </nav>     
+            <div id="testeContainer" class="container">
+                <div class="title">Teste de Covid-19</div>
+                <div id="question" class="question"></div>
+                <label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+                <label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+                <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Próxima Pergunta</button>
+            </div>
+        <div id="result" class="container result" style="display:none;">          
+        </div>
+        <script src="question.js"></script>
+        <script src="teste-script.js"></script>              
+    </body>
+</html>
